@@ -18,7 +18,7 @@ class MrCoxallStack {
   public pushItem(pushedNumber: number): void {
     this.stackAsList.push(pushedNumber)
   }
-  
+
   public popItem(): number {
     const answerNumber = this.stackAsList.pop()
     return answerNumber
