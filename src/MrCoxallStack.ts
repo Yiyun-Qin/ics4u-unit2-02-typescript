@@ -7,20 +7,21 @@
  */
 
 class MrCoxallStack {
-  private stackAsList: number[] = []
+  private readonly stackAsList: number[] = []
 
   // getters
-  public getItem(): number {
-    return answerNumber
+  public getItem(): number[] {
+    return this.stackAsList
   }
 
   // setters
   public pushItem(pushedNumber: number): void {
     this.stackAsList.push(pushedNumber)
   }
-
-  public popItem(): void {
+  
+  public popItem(): number {
     const answerNumber = this.stackAsList.pop()
+    return answerNumber
   }
 }
 export = MrCoxallStack
