@@ -6,8 +6,8 @@
  * Since:   2022-09-23
  */
 
-class MrCoxallStack {
-  private readonly stackAsList: number[] = []
+ class MrCoxallStack {
+  private stackAsList: number[] = []
 
   // getters
   public getItem(): number[] {
@@ -19,7 +19,11 @@ class MrCoxallStack {
     this.stackAsList.push(pushedNumber)
   }
 
-  public popItem(): number {
+  public showItem(): void {
+    console.log(this.stackAsList)
+  }
+
+  public popItem(): number | undefined {
     const answerNumber = this.stackAsList.pop()
     return answerNumber
   }

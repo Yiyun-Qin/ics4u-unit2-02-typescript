@@ -6,20 +6,14 @@
  * Since:   2022-09-23
  */
 
-import MrCoxallStack from './MrCoxallStack'
-import promptSync from 'prompt-sync'
+ import MrCoxallStack from './MrCoxallStack'
 
-const prompt = promptSync()
-const newStack = new MrCoxallStack()
-
-const passedNumberString = prompt('Enter an integer: ')
-
-const passedNumber = parseInt(passedNumberString)
-if (isNaN(passedNumber)) {
-  console.log('Invalid Number!')
-} else {
-  newStack.pushItem(passedNumber)
-  newStack.popItem()
-  newStack.getItem()
-}
-console.log('\nDone.')
+ const newStack = new MrCoxallStack()
+ 
+ newStack.pushItem(12)
+ newStack.pushItem(18)
+ newStack.showItem()
+ newStack.popItem()
+ newStack.showItem()
+ 
+ console.log('\nDone.')
