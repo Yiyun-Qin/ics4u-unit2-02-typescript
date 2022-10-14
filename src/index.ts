@@ -6,14 +6,14 @@
  * Since:   2022-09-23
  */
 
- import MrCoxallStack from './MrCoxallStack'
+import MrCoxallStack from './MrCoxallStack'
 
- const newStack = new MrCoxallStack()
- 
- newStack.pushItem(12)
- newStack.pushItem(18)
- newStack.showItem()
- newStack.popItem()
- newStack.showItem()
- 
- console.log('\nDone.')
+const newStack = new MrCoxallStack()
+
+newStack.pushItem(12)
+newStack.pushItem(18)
+newStack.showItem()
+newStack.popItem()
+newStack.showItem()
+
+console.log('\nDone.')
