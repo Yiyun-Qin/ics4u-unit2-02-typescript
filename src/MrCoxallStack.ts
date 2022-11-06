@@ -6,8 +6,12 @@
  * Since:   2022-09-23
  */
 
-class MrCoxallStack {
-  private stackAsList: number[] = []
+ class MrCoxallStack {
+  /**
+   * The list which contains the number
+   *
+   */
+  private readonly stackAsList: number[] = []
 
   // getters
   public getItem(): number[] {
@@ -19,10 +23,18 @@ class MrCoxallStack {
     this.stackAsList.push(pushedNumber)
   }
 
+  /**
+   * show list
+   *
+   */
   public showItem(): void {
     console.log(this.stackAsList)
   }
 
+  /**
+   * pop the top number in the list
+   *
+   */
   public popItem(): number | undefined {
     const answerNumber = this.stackAsList.pop()
     return answerNumber
